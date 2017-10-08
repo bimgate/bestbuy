@@ -1,7 +1,8 @@
 Feature: Create get request and consume proper response from API
 
   Background:
-    Given server API is up and running on "http://localhost:3030/products/" with response code 200
+    Given server API is up and running on "http://localhost:3030/products/"
+    And   response code is 200
 
   Scenario: Get product with ID of 9132294
     When client send get request "http://localhost:3030/products/9132294"

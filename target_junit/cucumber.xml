@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="23" time="6.62188">
+<testcase classname="Create get request and consume proper response from API" name="Get product with ID of 9132294" time="0.301412">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products/9132294".......passed
+Then server API should response with JSON payload:..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products" time="0.322965">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "48530", model "MN1500B4Z":.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products 2" time="0.322703">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "127687", model "MN1500B8Z":................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products 3" time="0.318377">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "150115", model "E91BP-4":..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products 4" time="0.317554">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "185230", model "MN1400R4Z":................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products 5" time="0.318689">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "185267", model "MN1300R4Z":................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products 6" time="0.315953">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "309062", model "TS-X200":..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products 7" time="0.316308">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "312290", model "MN1604B2Z":................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products 8" time="0.315688">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "333179", model "E90BP-2":..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products 9" time="0.317277">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products"...............passed
+Then server API should response with JSON which contains list of all products.passed
+And every product should has id "346575", model "99-5512":..................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products, limit to 1 result" time="0.313304">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?$limit=1"......passed
+Then server API should response with 1 product JSON.........................passed
+And with "limit" field value "1"............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products, skip to the 25,001th result" time="0.323829">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?$skip=25000"...passed
+Then server API response JSON should has "skip" value "25000"...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products, sort by highest price (descending)" time="0.380686">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?$sort[price]=-1".passed
+Then server API response JSON should has products "price" ordered from highest to lowest.passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products, sort by lowest price (ascending)" time="0.382389">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?$sort[price]=1".passed
+Then server API response JSON should has products "price" ordered from lowest to highest.passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get all products, but only show the name and price in the result" time="0.178326">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?$select[]=name&$select[]=price".passed
+Then server API response JSON should contain only "name" and "price" for all products.passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get products of type HardGood" time="0.309121">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?type=HardGood".passed
+Then server API response JSON should contain only products which "type" is "HardGood".passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get products less than or equal to $1.00" time="0.191674">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?price[$lte]=1".passed
+Then server API response JSON should contain only products with "price" lest than or equal "1.00".passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get products that have 'star wars' in the name and are under $30" time="0.203989">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?name[$like]=*star+wars*&price[$lt]=30".passed
+Then server API response JSON should contain only products with text "star wars" in "name" and "price" less than "30".passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get products that are either $0.99 or $1.99" time="0.194604">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?price[$in]=0.99&price[$in]=1.99".passed
+Then server API response JSON should contain only products with "price" "0.99" or "1.99".passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get products that have a shipping price of more than $10" time="0.194226">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?shipping[$gt]=10".passed
+Then server API response JSON should contain only products with "shipping" more than "10".passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get products that are not HardGood or Software" time="0.203015">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?type[$nin][]=HardGood&type[$nin][]=Software".passed
+Then server API response JSON should contain only products which "type" is not "HardGood" or "Software".passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get products that are in category name &quot;Coffee Pods&quot;" time="0.375011">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?category.name=Coffee%20Pods".passed
+Then server API response JSON should contain only products which are in "categories", "name" "Coffee Pods".passed
+]]></system-out>
+</testcase>
+<testcase classname="Create get request and consume proper response from API" name="Get products that are in category ID &quot;abcat0106004&quot; (TV Mounts)" time="0.20478">
+<system-out><![CDATA[Given server API is up and running on "http://localhost:3030/products/" with response code 200.passed
+When client send get request "http://localhost:3030/products?category.id=abcat0106004".passed
+Then server API response JSON should contain only products which are in "categories", "id" "abcat0106004".passed
+]]></system-out>
+</testcase>
+</testsuite>

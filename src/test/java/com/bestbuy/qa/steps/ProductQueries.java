@@ -1,8 +1,8 @@
 package com.bestbuy.qa.steps;
 
 import com.bestbuy.qa.helpers.Convert;
-import com.bestbuy.qa.helpers.Tests;
 import com.bestbuy.qa.helpers.Sorted;
+import com.bestbuy.qa.helpers.Tests;
 import com.bestbuy.qa.resources.HttpClientGet;
 import com.bestbuy.qa.utils.ParseJsonString;
 import cucumber.api.java.en.And;
@@ -20,6 +20,7 @@ import java.util.ArrayList;
  */
 public class ProductQueries {
     HttpClientGet client = new HttpClientGet();
+    int getResponseCode;
     Convert convert = new Convert();
     JSONObject apiResponse;
     Tests tests = new Tests();
@@ -27,9 +28,14 @@ public class ProductQueries {
     Sorted sorted = new Sorted();
 
 
-    @Given("^server API is up and running on \"([^\"]*)\" with response code (\\d+)$")
-    public void serverAPIIsUpAndRunningOnWithResponseCode(String apiUrl, int responseCode) throws Throwable {
-        Assert.assertEquals(client.getResponseCode(apiUrl), responseCode, "different response code");
+    @Given("^server API is up and running on \"([^\"]*)\"$")
+    public void serverAPIIsUpAndRunningOn(String apiUrl) throws Throwable {
+        getResponseCode = client.getResponseCode(apiUrl);
+    }
+
+    @And("^response code is (\\d+)$")
+    public void responseCodeIs(int code) throws Throwable {
+        Assert.assertEquals(getResponseCode, code, "different response code");
     }
 
     @When("^client send get request \"([^\"]*)\"$")
@@ -137,6 +143,4 @@ public class ProductQueries {
         boolean result =  tests.oneCategory(elementsList, category, name, type);
         Assert.assertEquals(result,true);
     }
-
-
 }
