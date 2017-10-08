@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component LANGUAGE_LEVEL="JDK_1_8" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/target/test-classes"/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/src/test/java"/>
+		<testFolder url="file://$MODULE_DIR$/target/generated-test-sources/cucumber"/>
+		<excludeFolder url="file://$MODULE_DIR$/target"/>
+	</contentEntry>
+	<lib name="Maven: org.testng:testng:6.11" scope="TEST"/>
+	<lib name="Maven: com.beust:jcommander:1.64" scope="TEST"/>
+	<lib name="Maven: org.yaml:snakeyaml:1.17" scope="TEST"/>
+	<levels>
+		<level name="Maven: info.cukes:cucumber-java:1.2.5" value="project"/>
+		<level name="Maven: info.cukes:cucumber-core:1.2.5" value="project"/>
+		<level name="Maven: info.cukes:cucumber-html:0.2.3" value="project"/>
+		<level name="Maven: info.cukes:cucumber-jvm-deps:1.0.5" value="project"/>
+		<level name="Maven: info.cukes:gherkin:2.12.2" value="project"/>
+		<level name="Maven: com.googlecode.json-simple:json-simple:1.1.1" value="project"/>
+		<level name="Maven: junit:junit:4.10" value="project"/>
+		<level name="Maven: org.hamcrest:hamcrest-core:1.1" value="project"/>
+		<level name="Maven: org.testng:testng:6.11" value="project"/>
+		<level name="Maven: com.beust:jcommander:1.64" value="project"/>
+		<level name="Maven: org.yaml:snakeyaml:1.17" value="project"/>
+	</levels>
+</component>

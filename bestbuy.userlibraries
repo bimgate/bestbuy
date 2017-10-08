@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Maven: com.beust:jcommander:1.64">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/com/beust/jcommander/1.64/jcommander-1.64.jar" />
+  </library>
+  <library name="Maven: com.googlecode.json-simple:json-simple:1.1.1">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar" />
+  </library>
+  <library name="Maven: info.cukes:cucumber-core:1.2.5">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/info/cukes/cucumber-core/1.2.5/cucumber-core-1.2.5.jar" />
+  </library>
+  <library name="Maven: info.cukes:cucumber-html:0.2.3">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/info/cukes/cucumber-html/0.2.3/cucumber-html-0.2.3.jar" />
+  </library>
+  <library name="Maven: info.cukes:cucumber-java:1.2.5">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/info/cukes/cucumber-java/1.2.5/cucumber-java-1.2.5.jar" />
+  </library>
+  <library name="Maven: info.cukes:cucumber-jvm-deps:1.0.5">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/info/cukes/cucumber-jvm-deps/1.0.5/cucumber-jvm-deps-1.0.5.jar" />
+  </library>
+  <library name="Maven: info.cukes:gherkin:2.12.2">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar" />
+  </library>
+  <library name="Maven: junit:junit:4.10">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/junit/junit/4.10/junit-4.10.jar" />
+  </library>
+  <library name="Maven: org.hamcrest:hamcrest-core:1.1">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" />
+  </library>
+  <library name="Maven: org.testng:testng:6.11">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/org/testng/testng/6.11/testng-6.11.jar" />
+  </library>
+  <library name="Maven: org.yaml:snakeyaml:1.17">
+    <archive path="C:/Users/bratislav.miletic/.m2/repository/org/yaml/snakeyaml/1.17/snakeyaml-1.17.jar" />
+  </library>
+</eclipse-userlibraries>
+
