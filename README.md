@@ -3,6 +3,7 @@
 Hello,
 
 All requested API queries are covered with this auto TestSet.
+JVM-Cucumber is used for writing tests in this TestSet.
 
  - Gherkin scenarios can be found at: /src/test/java/features/ProductQueries.feature
  - Runner is at: /src/test/java/runner/TestRunner.java
