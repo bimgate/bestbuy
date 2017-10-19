@@ -15,12 +15,14 @@ public class Tests {
         boolean addElement = false;
 
         for (int i = 0; i< arr.size(); i++ ) {
-            HashMap hm = (HashMap) arr.get(i);
-            for (Object elementHm : hm.keySet()) {
-                if ((elementHm != name) || (elementHm != price)){
-                    addElement = false;
-                } else {
-                    addElement = true;
+            HashMap<String, String> hm = (HashMap) arr.get(i);
+            for (String elementHm : hm.keySet()) {
+                if (!name.equals(elementHm)){
+                    if (!price.equals(elementHm)){
+                        addElement = true;
+                        break;
+                    }
+
                 }
             }
         }
